@@ -1,5 +1,7 @@
 # global-memory
 
+> [github.com/sanqiuyef/global-memory-mcp](https://github.com/sanqiuyef/global-memory-mcp)
+
 跨项目全局记忆 MCP server，为 ZCode 设计，兼容任何 MCP 客户端（Claude Desktop、Codex、Cursor 等）。解决编码 Agent 原生记忆按项目隔离、机器级事实（电脑配置、软件环境、全局路径）跨项目反复重查的问题。零第三方依赖（仅需 `mcp` 包），单文件部署。
 
 ## 定位与分工
