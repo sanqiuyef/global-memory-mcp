@@ -22,7 +22,13 @@ TYPE_DESC = {
     "reference": "外部资源指针（URL、面板、单据）",
 }
 
-mcp = FastMCP("global-memory")
+INSTRUCTIONS = (
+    "全局记忆库：跨项目共享的机器级/用户级事实（硬件配置、软件版本、路径、已验证踩坑）。"
+    "遇到环境、配置、路径、版本类问题时先用 memory_search / memory_list 查询，查到即用、不重查实测；"
+    "会话中确认的新稳定事实（尤其是排查过的环境问题）收尾时用 memory_write 回写。"
+)
+
+mcp = FastMCP("global-memory", instructions=INSTRUCTIONS)
 
 
 # ---------- 路径与格式 ----------
